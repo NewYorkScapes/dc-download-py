@@ -5,4 +5,4 @@ A Python approach to the concept for an NYPL API utility written in Node.js and 
 
 Basic usage:
 
-<code>python dc-download.py \[-h\] \[-t <api-token>\] \[-o <path>\] \[-f <filename>] \[-s <size>\] \[-u <uuid-of-item>\]</code>
+<code>python dc-download.py \[-h\] \[-t \<api-token\>\] \[-o \<path\>\] \[-f \<filename\>\] \[-s \<size\>\] \[-u \<uuid-of-item\>\]</code>
