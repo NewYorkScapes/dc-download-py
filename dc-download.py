@@ -7,7 +7,7 @@ import json
 import time
 
 def parse_argument():
-    parser = argparse.ArgumentParser(prog='Python DC-DOWNLOAD', usage='%(prog)s [-h] [-t <api-token>] [-o <path>] [-f <filename>] [-s <size>] [-u <uuid-of-item>]',
+    parser = argparse.ArgumentParser(prog='python dc-download.py', usage='%(prog)s [-h] [-t <api-token>] [-o <path>] [-f <filename>] [-s <size>] [-u <uuid-of-item>]',
                         description='A Python version of the NYPL dc-download Image Downloader (see https://github.com/nypl-spacetime/dc-download'
                         )
     parser.add_argument('-t', '--token', action='store', required=True, help='Digital Collections API access token, see http://api.repo.nypl.org/')
