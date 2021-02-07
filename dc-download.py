@@ -40,8 +40,7 @@ def make_filename(size_letters, derivative, sort_num, capture_num, capture_uuid)
 
 class CaptureUrls:
 
-    def __init__(self, item_uuid, auth_token, iter_start=0):
-        self.iter_current = iter_start
+    def __init__(self, item_uuid, auth_token):
         self.list_image_urls = []
         auth = 'Token token=' + auth_token
         tries = 0
