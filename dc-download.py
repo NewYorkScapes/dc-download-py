@@ -13,7 +13,17 @@ def parse_argument():
     parser.add_argument('-t', '--token', action='store', required=True, help='Digital Collections API access token, see http://api.repo.nypl.org/')
     parser.add_argument('-s', '--size', action='store', default='b', choices=['b','f','t','r','w','q','v','g','T'], help="""
     
-    size/type of images to be downloaded - see below (default is 'b', thumbnail). Use T for fullsize tiff.
+    size/type of images to be downloaded - see below (default is 'b', thumbnail).
+    
+        b - .jpeg center cropped thumbnail (100x100 pixels)
+        f - .jpeg (140 pixels tall with variable width)
+        t - .gif (150 pixels on the long side). Not currently an option.
+        r - .jpeg (300 pixels on the long side)
+        w - .jpeg (760 pixels on the long side)
+        q - .jpeg (1600 pixels on the long side)
+        v - .jpeg (2560 pixels on the long side)
+        g - .jpeg original dimensions
+        T - tiff/sull size. Not currently an option.
     
     Examples:
     'piu' will yield "<pageNum>.<imageId>.<uuid>.jpg"
