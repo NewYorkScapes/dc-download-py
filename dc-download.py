@@ -57,7 +57,7 @@ class CaptureUrls:
         page = 1
         while tries < 4:
             try:
-                captures_r = requests.get('http://api.repo.nypl.org/api/v1/items/' + item_uuid + '?page=' + str(page) + '&per_page=200', headers={'Authorization': auth})
+                captures_r = requests.get('http://api.repo.nypl.org/api/v2/items/' + item_uuid + '?page=' + str(page) + '&per_page=200', headers={'Authorization': auth})
                 if captures_r.status_code == 200:
                     captures_json = json.loads(captures_r.text)
                     self.list_image_urls += [(i['imageID'], i['uuid'], i['sortString'].split('|')[-1][7:]) for i in
